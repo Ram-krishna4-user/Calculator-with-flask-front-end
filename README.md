@@ -16,5 +16,6 @@ So, here in index.html, have the html & js code in distinguished way.
 # The applicatioin run sequnce -->
 1. run app.py (from your vscode, spyder etc or you can also run this from cmd -> python (path_of_app.py)
 2. In your browser go to --> http://127.0.0.1:5000
-3. 
+3. <img width="900" height="599" alt="image" src="https://github.com/user-attachments/assets/9754207d-1121-4c6c-bbd3-f9c8c4aad742" />
+
 

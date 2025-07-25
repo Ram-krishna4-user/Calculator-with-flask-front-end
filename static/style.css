@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Calculator Box */
+.calculator {
+  width: 320px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  font-size: 24px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+/* Button Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.buttons button {
+  padding: 18px;
+  font-size: 20px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.buttons button:hover {
+  background: #d4d4d4;
+  transform: scale(1.05);
+}
+
+.buttons button:active {
+  background: #bbb;
+}
+
+/* Clear Button Spanning Full Width */
+.buttons button[style*="grid-column"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.buttons button[style*="grid-column"]:hover {
+  background-color: #d32f2f;
+}
+
+/* History Panel */
+.history {
+  width: 240px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.history h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-family: monospace;
+  font-size: 16px;
+}
